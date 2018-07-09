@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Administrator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <!-- Custom styles for this template -->
+    <link href="../../../css/administratorCSS/administrator.css" rel="stylesheet">
+    <style type="text/css">
+        .head-avatar-wrap {
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        .head-avatar {
+            width: 31px;
+            height: 37px;
+        }
+    </style>
+    <script>
+        function AthleteBeingChoosed(obj) {
+            var node = obj.parentNode.parentNode;
+            node.parentNode.removeChild(node);
+            document.getElementById("athlete-choosed").appendChild(node);
+        }
+
+        function TeamBeingChoosed(obj) {
+            var node = obj.parentNode.parentNode;
+            node.parentNode.removeChild(node);
+            document.getElementById("team-choosed").appendChild(node);
+        }
+    </script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="../OverView/OverView.html">OverView</a></li>
+                <li><a href="../RegisterAthlete/RegisterAthlete.html">Register Athlete</a></li>
+                <li><a href="../RegisterTeam/RegisterTeam.html">Register Team</a></li>
+                <li class="active"><a href="#">Add Competition<span class="sr-only">(current)</span></a></li>
+                <li><a href="../ManageCompetition/ManageCompetition.html">Manage Competition</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="">Nav item</a></li>
+                <li><a href="">Nav item again</a></li>
+                <li><a href="">One more nav</a></li>
+                <li><a href="">Another nav item</a></li>
+                <li><a href="">More navigation</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="">Nav item again</a></li>
+                <li><a href="">One more nav</a></li>
+                <li><a href="">Another nav item</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Add Competition</h1>
+            <h2 class="sub-header">Section title</h2>
+            <div class="col-md-12" style="margin-bottom: 40px">
+                <div class="col-md-3" style="box-shadow: 0 0 black;
+            box-shadow: 0px 0px 20px 0px rgba(196, 196, 196, 1);padding-bottom: 20px">
+                    <label style="margin-top: 10px">Date</label>
+                    <input type="text" class="form-control" id="datepicker">
+                    <label style="margin-top: 10px">Category</label>
+                    <select class="form-control" id="select-firstlayer">
+                        <option value="0"></option>
+                        <option value="1">Alpine Skiing</option>
+                        <option value="2">Biathlon</option>
+                        <option value="3">Bobsleigh</option>
+                        <option value="4">Cross Country Skiing</option>
+                        <option value="5">Curling</option>
+                    </select>
+                    <label style="margin-top: 10px">Team or Individual</label>
+                    <select class="form-control" id="teamorindividual" style="margin-bottom: 10px">
+                        <option value="0"></option>
+                        <option value="1">individual</option>
+                        <option value="2">team</option>
+                    </select>
+                    <button type="button" class="btn btn-primary" id="submit">SUBMIT</button>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-8" style="box-shadow: 0 0 black;
+            box-shadow: 0px 0px 20px 0px rgba(196, 196, 196, 1);">
+                    <div class="tab-pane fade in active">
+                        <div class="table table-striped" style="padding-top: 10px" id="tableArea">
+                            <!--insert table here-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active">
+                    <a href="#home" data-toggle="tab">
+                        SELECT ATHLETES
+                    </a>
+                </li>
+                <li>
+                    <a href="#ios" data-toggle="tab">
+                        SELECT TEAMS
+                    </a>
+                </li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>#Athlete</th>
+                                <th>Name</th>
+                                <th>Picture</th>
+                                <th>Gender</th>
+                                <th>Best Result</th>
+                                <th>Country</th>
+                            </tr>
+                            </thead>
+                            <tbody id="RegisterAthleteDisplay">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ios">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>#Team</th>
+                                <th>Best Result</th>
+                                <th>Country</th>
+                            </tr>
+                            </thead>
+                            <tbody id="RegisterTeamDisplay">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        /*激活  datepicker*/
+        $("#datepicker").datepicker();
+
+        /*Initialize  athlete 表*/
+        $.ajax({
+            type: "Get",
+            contentType: "application/json",
+            url: "/page/AllAthleteDisplay",
+            dataType: 'json',
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+                $.each(data.result,function (index,value) {
+                    var newRow =
+                        "<tr>" +
+                        "<td class='plus-icon'><span class=\"glyphicon glyphicon-plus\" onclick=\"AthleteBeingChoosed(this)\"></span></td>"+
+                        "<td class='tableitem-class'>"+value.aid+"</td>" +
+                        "<td>"+value.name+"</td>" +
+                        "<td class=\"head-avatar-wrap\" style='padding-bottom: 0px;" +
+                        "            padding-top: 0px;'><img class=\"head-avatar\" src=\""+value.picture+"\"></td>" +
+                        "<td>"+value.gender+"</td>" +
+                        "<td>"+value.bestResult+"</td>" +
+                        "<td>"+value.country+"</td>" +
+                        "</tr>";
+                    $("#RegisterAthleteDisplay").append(newRow);
+                })
+            },
+            error: function (e) {
+                console.log("Something wrong with background");
+            }
+        });
+
+        /*Initialize team 表*/
+        $.ajax({
+            type: "Get",
+            contentType: "application/json",
+            url: "/page/AllTeamDisplay",
+            dataType: 'json',
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+                $.each(data.result,function (index,value) {
+                    var newRow =
+                        "<tr>" +
+                        "<td class='plus-icon'><span class=\"glyphicon glyphicon-plus\" onclick=\"TeamBeingChoosed(this)\"></span></td>"+
+                        "<td class='tableitem-class'>"+value.tid+"</td>" +
+                        "<td>"+value.bestresult+"</td>" +
+                        "<td>"+value.country+"</td>" +
+                        "</tr>";
+                    $("#RegisterTeamDisplay").append(newRow);
+                })
+            },
+            error: function (e) {
+                console.log("Something wrong with background");
+            }
+        });
+
+
+
+        $("#select-firstlayer").change(function () {
+            var opt = $(this).val();
+            var insertSecondLayer;
+            if (opt == '1') {
+                insertSecondLayer =
+                    "                <select class=\"form-control\" id=\"select-secondlayer\">" +
+                    "                    <option value=\"0\">Men's Downhill</option>" +
+                    "                    <option value=\"1\">Men's Giant Slalom</option>" +
+                    "                    <option value=\"2\">Men's Alpine Combined</option>" +
+                    "                    <option value=\"3\">Men's Super-G</option>" +
+                    "                    <option value=\"4\">Alpine Team Event</option>" +
+                    "                </select>";
+            }
+            $(this).after(insertSecondLayer);
+        });
+
+        $("#teamorindividual").change(function () {
+            var opt = $(this).val();
+            var insertSecondLayer;
+            if (opt == '1') {
+                insertSecondLayer =
+                    "<table class=\"table table-striped\">\n" +
+                    "                            <thead>\n" +
+                    "                            <tr>\n" +
+                    "                                <th></th>\n" +
+                    "                                <th>#Athlete</th>\n" +
+                    "                                <th>Name</th>\n" +
+                    "                                <th>Picture</th>\n" +
+                    "                                <th>Gender</th>\n" +
+                    "                                <th>Best Result</th>\n" +
+                    "                                <th>Country</th>\n" +
+                    "                            </tr>\n" +
+                    "                            </thead>\n" +
+                    "                            <tbody id='athlete-choosed'>\n" +
+                    "                            </tbody>\n" +
+                    "                        </table>";
+            }
+            else if (opt == '2') {
+                insertSecondLayer =
+                    "<table class=\"table table-striped\">\n" +
+                    "                            <thead>\n" +
+                    "                            <tr>\n" +
+                    "                                <th></th>\n" +
+                    "                                <th>#Team</th>\n" +
+                    "                                <th>Best Result</th>\n" +
+                    "                                <th>Country</th>\n" +
+                    "                            </tr>\n" +
+                    "                            </thead>\n" +
+                    "                            <tbody id='team-choosed'>\n" +
+                    "                            </tbody>\n" +
+                    "                        </table>";
+            }
+            $("#tableArea").empty();
+            $("#tableArea").append(insertSecondLayer);
+        });
+
+        $("#submit").click(function () {
+            if ($("#teamorindividual").find('option:selected').text()=="individual"){
+                var submission = {};
+                submission.date = $("#datepicker").datepicker( "getDate" );
+                submission.categoryFirstlayer = $("#select-firstlayer").find("option:selected").text();
+                submission.category_secondlayer = $("#select-secondlayer").find("option:selected").text();
+                submission.teamOrindividual = $("#teamorindividual").find("option:selected").text();
+                submission.idcollection = [];
+
+                $.each($("#tableArea .tableitem-class"),function (i,val) {
+                    submission.idcollection.push($(val).text());
+                });
+                submission.idcollection = JSON.stringify(submission.idcollection);
+
+                $.ajax({
+                    type:"POST",
+                    contentType: "application/json",
+                    url: "/admin/AddCompetitionAthleteTpye",
+                    data:JSON.stringify(submission),
+                    dataType:'json',
+                    cathe:false,
+                    timeout:6000,
+                    success:function (e) {
+                    },
+                    error: function (e) {
+                    }
+                });
+            }else if($("#teamorindividual").find('option:selected').text()=="team"){
+                var submissionTeamCompetition = {};
+                submissionTeamCompetition.date = $("#datepicker").datepicker( "getDate" );
+                submissionTeamCompetition.categoryFirstlayer = $("#select-firstlayer").find("option:selected").text();
+                submissionTeamCompetition.category_secondlayer = $("#select-secondlayer").find("option:selected").text();
+                submissionTeamCompetition.teamOrindividual = $("#teamorindividual").find("option:selected").text();
+                submissionTeamCompetition.idcollection = [];
+
+                $.each($("#tableArea .tableitem-class"),function (i,val) {
+                    submissionTeamCompetition.idcollection.push($(val).text());
+                })
+                submissionTeamCompetition.idcollection = JSON.stringify(submissionTeamCompetition.idcollection);
+
+                $.ajax({
+                    type:"POST",
+                    contentType: "application/json",
+                    url: "/admin/AddCompetitionTeamTpye",
+                    data:JSON.stringify(submissionTeamCompetition),
+                    dataType:'json',
+                    cathe:false,
+                    timeout:6000,
+                    success:function (e) {
+                    },
+                    error: function (e) {
+                    }
+                });
+            }
+
+        })
+    });
+</script>
+

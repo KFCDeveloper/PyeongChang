@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ManageCompetition</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <!-- Custom styles for this template -->
+    <link href="../../../css/administratorCSS/administrator.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="../OverView/OverView.html">Overview </a></li>
+                <li><a href="../RegisterAthlete/RegisterAthlete.html">Register Athlete</a></li>
+                <li><a href="../RegisterTeam/RegisterTeam.html">Register Team</a></li>
+                <li><a href="../AddCompetition/AddCompetition.html">Add Competition</a></li>
+                <li class="active"><a href="#">Manage Competition<span class="sr-only">(current)</span></a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="">Nav item</a></li>
+                <li><a href="">Nav item again</a></li>
+                <li><a href="">One more nav</a></li>
+                <li><a href="">Another nav item</a></li>
+                <li><a href="">More navigation</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="">Nav item again</a></li>
+                <li><a href="">One more nav</a></li>
+                <li><a href="">Another nav item</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Manage Competition</h1>
+            <div class="col-md-3" style="box-shadow: 0 0 black;
+            box-shadow: 0px 0px 20px 0px rgba(196, 196, 196, 1);padding-bottom: 20px;margin-bottom: 40px">
+                <h3 class="sub-header" id="competition-editheader">Edit Competition &nbsp&nbsp&nbsp#1</h3>
+                <h4>State</h4>
+                <div id="select-wrap">
+                    <select class="form-control" id="state" style="margin-bottom: 10px">
+                        <option value="0"></option>
+                        <option value="1">Not Started</option>
+                        <option value="2">In Progress</option>
+                        <option value="3">Finished</option>
+                    </select>
+                </div>
+                <div id="participant-result">
+                </div>
+                <button type="button" class="btn btn-primary" id="submit" style="width: 100%;margin-top: 10px">SUBMIT
+                </button>
+            </div>
+
+
+            <div class="col-md-1"></div>
+            <div class="col-md-8" style="box-shadow: 0 0 black;
+            box-shadow: 0px 0px 20px 0px rgba(196, 196, 196, 1);padding-bottom: 20px;margin-bottom: 40px">
+                <h3 class="sub-header">Choose Competition</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>#Competition</th>
+                            <th>Category First</th>
+                            <th>Category Second</th>
+                            <th>Date</th>
+                            <th>State</th>
+                            <th>Team or Athlete</th>
+                        </tr>
+                        </thead>
+                        <tbody id="CompetitionDisplay">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    /*global variable competitiondata*/
+    var competitiondata = {};
+    var currentCompetition = {};
+    $(function () {
+        /*Initialize  competition 表*/
+        $.ajax({
+            type: "Get",
+            contentType: "application/json",
+            url: "/page/AllCompetitionDisplay",
+            dataType: 'json',
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+                competitiondata = data.result;
+                $.each(data.result, function (index, value) {
+                    var newRow =
+                        "<tr>" +
+                        "<td class='edit-icon'><span class=\"glyphicon glyphicon-pencil\" onclick=\"EditCompetition(this)\"></span></td>" +
+                        "<td class='tableitem-class'>" + value.cid + "</td>" +
+                        "<td>" + value.categoryFirstlayer + "</td>" +
+                        "<td>" + value.category_secondlayer + "</td>" +
+                        "<td>" + value.date + "</td>" +
+                        "<td>" + value.state + "</td>" +
+                        "<td>" + value.teamOrindividual + "</td>" +
+                        "</tr>";
+                    $("#CompetitionDisplay").append(newRow);
+                })
+            },
+            error: function (e) {
+                console.log("Something wrong with background");
+            }
+        });
+        
+        $("#submit").click(function () {
+            currentCompetition.state = $("#state").find("option:selected").text();
+            var resultArray = JSON.parse(currentCompetition.result);
+            resultArray.grade = [];
+            $.each($(".participant-item .form-control"),function (i,val) {
+                resultArray.grade.push($(val).val());
+                currentCompetition.result = JSON.stringify(resultArray);
+            });
+            console.log(currentCompetition);
+            $.ajax({
+                type: "Post",
+                contentType: "application/json",
+                url: "/page/SaveCompetitionAthleteTpye",
+                data:JSON.stringify(currentCompetition),
+                dataType: 'json',
+                cache: false,
+                timeout: 600000,
+                success:function () {
+                    console.log("success");
+                }
+            })
+        })
+    });
+    function EditCompetition(obj) {
+        $("#participant-result").empty();
+        var cid = $(obj.parentNode.nextSibling).text();
+        $("#competition-editheader").text("Edit Competition #" + cid);
+        $.each(competitiondata, function (index, value) {
+            if (value.cid == cid) {
+                currentCompetition = value;
+            }
+        });
+        console.log(currentCompetition);
+
+
+        var selecthtml = "<select class=\"form-control\" id=\"state\" style=\"margin-bottom: 10px\">\n" +
+            "                    <option value=\"0\"></option>\n" +
+            "                    <option value=\"1\">Not Started</option>\n" +
+            "                    <option value=\"2\">In Progress</option>\n" +
+            "                    <option value=\"3\">Finished</option>\n" +
+            "                </select>";
+        $("#select-wrap").empty();
+        $("#select-wrap").append(selecthtml);
+        if (currentCompetition.state=="Not Started"){
+            $("#state").find("option[value='1']").attr("selected","selected");
+        } else if (currentCompetition.state=="In Progress"){
+            $("#state").find("option[value='2']").attr("selected","selected");
+        }else if (currentCompetition.state=="Finished") {
+            $("#state").find("option[value='3']").attr("selected","selected");
+        }
+
+
+        var comResult = JSON.parse(currentCompetition.result);
+
+        if (comResult.athleteIds != null) {
+            $.each(comResult.athleteIds, function (i, val) {
+                var participantsSlide = "<div class=\"participant-item\">\n" +
+                    "                        <label class=\"participantID\">ID : &nbsp&nbsp&nbsp#"+val+"</label>\n" +
+                    "                        <input type=\"text\" class=\"form-control\">\n" +
+                    "                    </div>";
+                $("#participant-result").append(participantsSlide);
+            })
+        } else if (comResult.teamIds != null) {
+            $.each(comResult.teamIds, function (i, val) {
+                var participantsSlide = "<div class=\"participant-item\">\n" +
+                    "                        <label class=\"participantID\">ID : &nbsp&nbsp&nbsp#"+val+"</label>\n" +
+                    "                        <input type=\"text\" class=\"form-control\">\n" +
+                    "                    </div>";
+                $("#participant-result").append(participantsSlide);
+
+            })
+        }
+
+        var competitionGrade = comResult.grade;
+        console.log(competitionGrade);
+        $.each($(".participant-item .form-control"),function (i,val) {
+            $(val).val(competitionGrade[i]);
+        })
+    }
+</script>

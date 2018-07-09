@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Competition Schedule - Pyeongchang 2018 Olympic Winter Games</title>
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/genStyle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/atos-style.css?v2018031111">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/jquery.jscrollpane.css?v20190129">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/justifiedGallery.css?v20190129">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/jquery.mThumbnailScroller.css?v20190129">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/Atos-WRS-CSS-Jan-21.css?v20190129">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/atos-reset.css?v20180221">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/layout.css?v201802211">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/layout-table.css?v20180221">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/contents-s.css?v20180221">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/contents-d.css?v2018030721">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/contents-k.css?v2018031111">
+    <link rel="stylesheet" type="text/css" href="../css/grab_schedule/layout-game.css?v20180206">
+    <link rel="stylesheet" type="text/css" href="https://www.pyeongchang2018.com/css/icon.css?v20180206">
+    <link rel="stylesheet" type="text/css" href="../css/schedule.css">
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WPG84N3');
+    </script>
+    
+        <script type="text/javascript">
+            function startTime() {
+                var today = new Date()
+                var y = today.getFullYear();
+                var mon = today.getMonth() + 1;
+                var day = today.getDate();
+                var h = today.getHours()
+                var m = today.getMinutes()
+                var s = today.getSeconds()
+    // add a zero in front of numbers<10
+                m = checkTime(m)
+                s = checkTime(s)
+                day = checkTime(day)
+                mon = checkTime(mon);
+                document.getElementById('txt').innerHTML = mon + "-" + day + "-" + y + " " + h + ":" + m + ":" + s;
+                setTimeout('startTime()', 500);
+            }
+    
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                }
+                return i
+            }
+        </script>  
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/bt/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/sinfoScripts/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/sinfoScripts/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/sinfoScripts/moment-timezone-with-data.min.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/sinfoScripts/sinfoScripts.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/sinfoScripts/initScripts.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/sinfoScripts/slick.min.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/js/magnetUI.js?v20190129"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/js/common.js?v20180207v1"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/js/staticSet.js?180207"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/js/ark.js?v20190129"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/js/sicc.sports.common.js?v20190129"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/js/sicc.sports.sns.share.js?v20190129"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/en/game-time/results/OWG2018/resCOMMON/sinfoScripts/stickyTableHeaders.js"></script>
+    <script type="text/javascript" src="https://www.pyeongchang2018.com/js/svgxuse.min.js?v20190129"></script>
+    <script type="text/javascript" src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_219.js"></script>
+    <script type="text/javascript">
+        function EnterPressCheck() {
+            if (event.keyCode == 13) {
+                var text = $('#searchTextPc').val();
+                $(location).attr("href", "/en/search?query=" + text);
+            } else {
+                return false;
+            }
+        }
+        $(document).ready(function () {
+            $('#searchMobile').click(function () {
+                var text = $('#searchTextMobile').val();
+                $(location).attr("href", "/en/search?query=" + text);
+            });
+            $('#searchPc').click(function () {
+                var text = $('#searchTextPc').val();
+                $(location).attr("href", "/en/search?query=" + text);
+            });
+        });
+    </script>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/timer.js"></script>
+    
+    
+</head>
+
+<body style="background-color: #F1F1F1" onload="startTime()">
+    <div id="mainContainer" class="container contents bgcolor" style="background-color: #F1F1F1">
+        <div class="section-crop">
+            <div class="column column-left">
+                <div class="section-inner">
+                    <div id="topSport" class="row">
+                        <div class="clear"></div>
+                    </div>
+                    <div id="secondMenu">
+                        <div class="nav nav-tabs row" id="navTabsSecondMenu">
+                            <ul>
+                                <li class="TopMenuLinks btn">
+                                    <a href="./competition-schedule.html">
+                                        Competition Schedule</a>
+                                </li>
+                                <li class="TopMenuLinks btn">
+                                    <a href="./countries.html">
+                                        Daily Schedule</a>
+                                </li>
+                                <li class="TopMenuLinks btn">
+                                    <a href="./countries.html">
+                                        NOC Schedule</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="mainBodyContent" class="row">
+                        <div id="mainBodyContent-left" class="blog-main">
+                            <div id="topSport" class="row">
+                                <div id="topSport_EventName">
+                                    <h1>
+                                        Competition Schedule</h1>
+                                </div>
+                            </div>
+                            <div class="GeneralScheduleContainer">
+                                <script src="../../resCOMMON/sinfoScripts/stickyTableHeaders.js" type="text/javascript"></script>
+                                <div class="table-responsive">
+                                    <table class="CalendarTable" id="GeneralScheduleTable">
+                                        <colgroup>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                            <col></col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr class="ResHead">
+                                                <th class="StyleCenter" colspan="2">
+                                                    <strong>
+                                                        Discipline</strong>
+                                                </th>
+                                                <th title="Wed, 7 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-07.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            7</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Wed</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Thu, 8 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-08.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            8</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Thu</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Fri, 9 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-09.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            9</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Fri</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sat, 10 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            10</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sat</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sun, 11 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            11</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sun</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Mon, 12 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            12</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Mon</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Tue, 13 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            13</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Tue</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Wed, 14 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            14</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Wed</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Thu, 15 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            15</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Thu</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Fri, 16 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            16</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Fri</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sat, 17 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            17</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sat</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sun, 18 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            18</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sun</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Mon, 19 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            19</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Mon</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Tue, 20 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            20</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Tue</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Wed, 21 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            21</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Wed</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Thu, 22 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            22</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Thu</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Fri, 23 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            23</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Fri</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sat, 24 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            24</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sat</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sun, 25 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-25.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            25</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sun</div>
+                                                    </a>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tr class="Res2">
+                                            <td class="ZZSchedule disciplinePicture">
+                                                <img src="../image/sports/CER.png" role="presentation" aria-hidden="true" alt="">
+                                            </td>
+                                            <td class="ZZSchedule styleLeft">
+                                                Ceremonies</td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony" title="Opening Ceremony&nbsp;Fri, 9 Feb">
+                                                <img src="../image/sports/day.png" alt="Ceremonies">
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony">
+                                                &nbsp;
+                                            </td>
+                                            <td class="ZZSchedule styleCenter CalendarTableCeremony" title="Closing Ceremony&nbsp;Sun, 25 Feb">
+                                                <img src="../image/sports/day.png" alt="Ceremonies">
+                                            </td>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/ALP.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/alpine-skiing/daily-schedule.htm'>Alpine Skiing</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Alpine Skiing
+    Thu, 8 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-08.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Alpine Skiing
+    Fri, 9 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-09.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Alpine Skiing
+    Sat, 10 Feb">
+                                                    </a>
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Alpine Skiing
+    Mon, 12 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Tue, 13 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Thu, 15 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Fri, 16 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Sat, 17 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Sun, 18 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Alpine Skiing
+    Mon, 19 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Alpine Skiing
+    Tue, 20 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Wed, 21 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Thu, 22 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Alpine Skiing
+    Sat, 24 Feb">
+                                                    <a href="../../en/alpine-skiing/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="discColorALP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res2">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/BTH.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/biathlon/daily-schedule.htm'>Biathlon</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Biathlon
+    Wed, 7 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-07.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Biathlon
+    Thu, 8 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-08.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Sat, 10 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Sun, 11 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Mon, 12 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Biathlon
+    Tue, 13 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Thu, 15 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Biathlon
+    Fri, 16 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Sat, 17 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Sun, 18 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Biathlon
+    Mon, 19 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Tue, 20 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Biathlon
+    Wed, 21 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Thu, 22 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Biathlon
+    Fri, 23 Feb">
+                                                    <a href="../../en/biathlon/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="discColorBTH">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/BOB.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/bobsleigh/daily-schedule.htm'>Bobsleigh</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Thu, 15 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Fri, 16 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Sat, 17 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Sun, 18 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Bobsleigh
+    Mon, 19 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Tue, 20 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Bobsleigh
+    Wed, 21 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Thu, 22 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Fri, 23 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Bobsleigh
+    Sat, 24 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Bobsleigh
+    Sun, 25 Feb">
+                                                    <a href="../../en/bobsleigh/daily-schedule-date=2018-02-25.htm">
+                                                        <div class="discColorBOB">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="Res2">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/CCS.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/cross-country-skiing/daily-schedule.htm'>Cross-Country Skiing</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Sat, 10 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Sun, 11 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Tue, 13 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Thu, 15 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Fri, 16 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Sat, 17 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Sun, 18 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Wed, 21 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Sat, 24 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Cross-Country Skiing
+    Sun, 25 Feb">
+                                                    <a href="../../en/cross-country-skiing/daily-schedule-date=2018-02-25.htm">
+                                                        <div class="discColorCCS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/CUR.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/curling/daily-schedule.htm'>Curling</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Thu, 8 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-08.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Fri, 9 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-09.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Sat, 10 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Sun, 11 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Mon, 12 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Curling
+    Tue, 13 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Wed, 14 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Thu, 15 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Fri, 16 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Sat, 17 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Sun, 18 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Mon, 19 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Tue, 20 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Wed, 21 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Curling
+    Thu, 22 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Curling
+    Fri, 23 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Curling
+    Sat, 24 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Curling
+    Sun, 25 Feb">
+                                                    <a href="../../en/curling/daily-schedule-date=2018-02-25.htm">
+                                                        <div class="discColorCUR">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="Res2">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/FSK.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/figure-skating/daily-schedule.htm'>Figure Skating</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Figure Skating
+    Fri, 9 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-09.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Figure Skating
+    Sun, 11 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Figure Skating
+    Mon, 12 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Figure Skating
+    Wed, 14 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Figure Skating
+    Thu, 15 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Figure Skating
+    Fri, 16 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Figure Skating
+    Sat, 17 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Figure Skating
+    Mon, 19 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Figure Skating
+    Tue, 20 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Figure Skating
+    Wed, 21 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Figure Skating
+    Fri, 23 Feb">
+                                                    <a href="../../en/figure-skating/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="discColorFSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/FRS.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/freestyle-skiing/daily-schedule.htm'>Freestyle Skiing</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Freestyle Skiing
+    Fri, 9 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-09.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Sun, 11 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Mon, 12 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Freestyle Skiing
+    Thu, 15 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Fri, 16 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Sat, 17 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Sun, 18 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Freestyle Skiing
+    Mon, 19 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Tue, 20 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Wed, 21 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Thu, 22 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Freestyle Skiing
+    Fri, 23 Feb">
+                                                    <a href="../../en/freestyle-skiing/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="discColorFRS">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res2">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/IHO.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/ice-hockey/daily-schedule.htm'>Ice Hockey</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Sat, 10 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Sun, 11 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Mon, 12 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Tue, 13 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Wed, 14 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Thu, 15 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Fri, 16 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Sat, 17 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Sun, 18 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Mon, 19 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Tue, 20 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ice Hockey
+    Wed, 21 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ice Hockey
+    Thu, 22 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ice Hockey
+    Fri, 23 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ice Hockey
+    Sat, 24 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ice Hockey
+    Sun, 25 Feb">
+                                                    <a href="../../en/ice-hockey/daily-schedule-date=2018-02-25.htm">
+                                                        <div class="discColorIHO">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/LUG.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/luge/daily-schedule.htm'>Luge</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Luge
+    Wed, 7 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-07.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Luge
+    Thu, 8 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-08.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Luge
+    Fri, 9 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-09.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Luge
+    Sat, 10 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Luge
+    Sun, 11 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Luge
+    Mon, 12 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Luge
+    Tue, 13 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Luge
+    Wed, 14 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Luge
+    Thu, 15 Feb">
+                                                    <a href="../../en/luge/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorLUG">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res2">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/NCB.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/nordic-combined/daily-schedule.htm'>Nordic Combined</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Nordic Combined
+    Sun, 11 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Nordic Combined
+    Mon, 12 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Nordic Combined
+    Tue, 13 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Nordic Combined
+    Wed, 14 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Nordic Combined
+    Sat, 17 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Nordic Combined
+    Sun, 18 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Nordic Combined
+    Mon, 19 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Nordic Combined
+    Tue, 20 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Nordic Combined
+    Wed, 21 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Nordic Combined
+    Thu, 22 Feb">
+                                                    <a href="../../en/nordic-combined/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorNCB">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/STK.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/short-track-speed-skating/daily-schedule.htm'>Short Track Speed Skating</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Short Track Speed Skating
+    Sat, 10 Feb">
+                                                    <a href="../../en/short-track-speed-skating/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorSTK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Short Track Speed Skating
+    Tue, 13 Feb">
+                                                    <a href="../../en/short-track-speed-skating/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorSTK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Short Track Speed Skating
+    Sat, 17 Feb">
+                                                    <a href="../../en/short-track-speed-skating/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorSTK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Short Track Speed Skating
+    Tue, 20 Feb">
+                                                    <a href="../../en/short-track-speed-skating/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="discColorSTK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Short Track Speed Skating
+    Thu, 22 Feb">
+                                                    <a href="../../en/short-track-speed-skating/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorSTK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res2">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/SKN.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/skeleton/daily-schedule.htm'>Skeleton</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Skeleton
+    Mon, 12 Feb">
+                                                    <a href="../../en/skeleton/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorSKN">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Skeleton
+    Tue, 13 Feb">
+                                                    <a href="../../en/skeleton/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorSKN">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Skeleton
+    Wed, 14 Feb">
+                                                    <a href="../../en/skeleton/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorSKN">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Skeleton
+    Thu, 15 Feb">
+                                                    <a href="../../en/skeleton/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorSKN">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Skeleton
+    Fri, 16 Feb">
+                                                    <a href="../../en/skeleton/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorSKN">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Skeleton
+    Sat, 17 Feb">
+                                                    <a href="../../en/skeleton/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorSKN">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/SJP.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/ski-jumping/daily-schedule.htm'>Ski Jumping</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ski Jumping
+    Wed, 7 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-07.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ski Jumping
+    Thu, 8 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-08.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ski Jumping
+    Sat, 10 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ski Jumping
+    Sun, 11 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ski Jumping
+    Mon, 12 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ski Jumping
+    Wed, 14 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ski Jumping
+    Thu, 15 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ski Jumping
+    Fri, 16 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ski Jumping
+    Sat, 17 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Ski Jumping
+    Sun, 18 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Ski Jumping
+    Mon, 19 Feb">
+                                                    <a href="../../en/ski-jumping/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorSJP">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res2">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/SBD.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/snowboard/daily-schedule.htm'>Snowboard</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Snowboard
+    Sat, 10 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Sun, 11 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Mon, 12 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Tue, 13 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Wed, 14 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Thu, 15 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Fri, 16 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Snowboard
+    Mon, 19 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableSchDay" title="Snowboard
+    Wed, 21 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/day.png" alt="Competition Day">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Thu, 22 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Snowboard
+    Sat, 24 Feb">
+                                                    <a href="../../en/snowboard/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="discColorSBD">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="Res1">
+                                                <td class="ZZSchedule disciplinePicture">
+                                                    <img src="../image/sports/SSK.png" role="presentation" aria-hidden="true" alt="">
+                                                </td>
+                                                <td class="ZZSchedule styleLeft">
+                                                    <a href='../../en/speed-skating/daily-schedule.htm'>Speed Skating</a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Sat, 10 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Sun, 11 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Mon, 12 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Tue, 13 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Wed, 14 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Thu, 15 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Fri, 16 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Sun, 18 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Mon, 19 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Wed, 21 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Fri, 23 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter CalendarTableMedalDay" title="Speed Skating
+    Sat, 24 Feb">
+                                                    <a href="../../en/speed-skating/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="discColorSSK">
+                                                            <img src="../image/sports/medal.png" alt="Day with medals">
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="ZZSchedule styleCenter" day="">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr class="ResHead">
+                                                <th colspan="2">
+                                                    Discipline</th>
+                                                <th title="Wed, 7 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-07.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            7</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Wed</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Thu, 8 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-08.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            8</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Thu</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Fri, 9 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-09.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            9</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Fri</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sat, 10 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-10.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            10</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sat</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sun, 11 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-11.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            11</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sun</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Mon, 12 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-12.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            12</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Mon</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Tue, 13 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-13.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            13</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Tue</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Wed, 14 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-14.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            14</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Wed</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Thu, 15 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-15.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            15</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Thu</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Fri, 16 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-16.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            16</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Fri</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sat, 17 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-17.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            17</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sat</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sun, 18 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-18.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            18</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sun</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Mon, 19 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-19.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            19</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Mon</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Tue, 20 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-20.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            20</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Tue</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Wed, 21 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-21.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            21</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Wed</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Thu, 22 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-22.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            22</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Thu</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Fri, 23 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-23.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            23</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Fri</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sat, 24 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-24.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            24</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sat</div>
+                                                    </a>
+                                                </th>
+                                                <th title="Sun, 25 Feb">
+                                                    <a href="../../en/general/daily-schedule-date=2018-02-25.htm">
+                                                        <div class="ScheduleBigFont">
+                                                            25</div>
+                                                        <div class="ScheduleSmallFont">
+                                                            Sun</div>
+                                                    </a>
+                                                </th>
+                                            </tr>
+                                    </table>
+                                </div>
+                                <br/>
+                                <div class="pull-left">
+                                    <diV class="col-sm-7 col-md-7">
+                                        <img src="../image/sports/day.png" role="presentation" aria-hidden="true" alt=""> Competition Day
+                                        <img src="../image/sports/medal.png" role="presentation" aria-hidden="true" alt=""> Day with medals
+                                        <img src="../image/CER.png" role="presentation" aria-hidden="true" alt=""> Ceremonies
+                                    </diV>
+                                    <diV class="col-sm-5 col-md-5" style="text-align: justify;">
+                                        The event schedules on the official website are based on the actual progress of the events, so it may not be in accordance
+                                        with the sessions that are sold from the ticket link.</div>
+                                </div>
+                                <br/>
+                                <script type="text/javascript">
+                                    // resalta el d?a actual en el calendario
+                                    $(document).ready(function () {
+                                        var currentTime = new Date();
+                                        //var currentDay = currentTime.getDate();
+                                        var currentDay = "2018-04-15";
+                                        $('#GeneralScheduleTable td.ZZSchedule[day=' + currentDay + ']').addClass(
+                                            'currentDay');
+                                        //$('#GeneralScheduleTable td.ZZSchedule[day='+currentDay+']').addClass('currentDay');
+                                        $("#GeneralScheduleTable").delegate('td', 'mouseover mouseleave',
+                                            function (e) {
+                                                if (e.type == 'mouseover') {
+                                                    $(this).parent().addClass("calendar-hover");
+                                                    if ($(this).index() > 1) {
+                                                        $("col").eq($(this).index()).addClass(
+                                                            "calendar-hover");
+                                                        $("th").eq($(this).index() - 1).addClass(
+                                                            "calendar-hover");
+                                                    }
+                                                } else {
+                                                    $(this).parent().removeClass("calendar-hover");
+                                                    if ($(this).index() > 1) {
+                                                        $("col").eq($(this).index()).removeClass(
+                                                            "calendar-hover");
+                                                        $("th").eq($(this).index() - 1).removeClass(
+                                                            "calendar-hover");
+                                                    }
+                                                }
+                                            });
+                                        $("#GeneralScheduleTable").delegate('th', 'mouseover mouseleave',
+                                            function (e) {
+                                                if (e.type == 'mouseover') {
+                                                    if ($(this).index() > 0) {
+                                                        $("col").eq($(this).index() + 1).addClass(
+                                                            "calendar-hover");
+                                                        $("th").eq($(this).index()).addClass(
+                                                            "calendar-hover");
+                                                    }
+                                                } else {
+                                                    if ($(this).index() > 0) {
+                                                        $("col").eq($(this).index() + 1).removeClass(
+                                                            "calendar-hover");
+                                                        $("th").eq($(this).index()).removeClass(
+                                                            "calendar-hover");
+                                                    }
+                                                }
+                                            });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footerBanner">
+                        <img src="../image/atos-omega_banner.jpg" alt="Powered by Atos-Omega">
+                    </div>
+                </div>
+            </div>
+            <!--right items-->
+            <div class="column column-right">
+                <div class="section-inner">
+                    <div>
+                            <span class="timer-header">
+                                  Countdown
+                            </span>
+                    <tr>
+                        <img src="../image/PyeongChang2018.png">
+                    </tr>
+                    <tr>
+                        <td class="colspan-a">
+                            <div class="data-show-box" id="dateShow1" style="padding-top:20px; padding-left: 27px;">
+                                <span class="date-font">Days&nbsp;&nbsp;&nbsp;</span>
+                                <span class="date-font">Hours&nbsp;</span>
+                                <span class="date-font">Mins&nbsp;&nbsp;&nbsp;</span>
+                                <span class="date-font">Secs&nbsp;&nbsp;&nbsp;</span>
+                                <span class="date-tiem-span d">00</span>
+                                <span class="date-tiem-span h">00</span>
+                                <span class="date-tiem-span m">00</span>
+                                <span class="date-s-span s">00</span>
+                            </div>
+                        </td>
+                        <td class="colspan-b"></td>
+                    </tr>
+                    <script type="text/javascript">
+                        $(function(){
+                            //日期倒计时
+                            $.leftTime("2020/02/04 20:00:00",function(d){
+                                if(d.status){
+                                    var $dateShow1=$("#dateShow1");
+                                    $dateShow1.find(".d").html(d.d);
+                                    $dateShow1.find(".h").html(d.h);
+                                    $dateShow1.find(".m").html(d.m);
+                                    $dateShow1.find(".s").html(d.s);
+                                }
+                            });
+                        });
+                    </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    /*调试headerNav居中*/
+    var width = window.screen.width;
+    document.getElementsByClassName("inner")[0].style.marginLeft = (width * 1 / 2 - 609) + "px";
+    /*navString-line显示及特效*/
+    for (var i = 0; i < 5; i++) {
+        var navStringWidth = document.getElementsByClassName("navString")[i].offsetWidth;
+        /*document.getElementsByClassName("navString-line")[i].style.width = navStringWidth+"px";*/
+        document.getElementsByClassName("navString-line")[i].style.marginLeft = (97 - navStringWidth * 1 / 2) + "px";
+        $(".nav-li")[i].click(function () {
+            $(".navString-line")[i].animate({
+                width: "" + navStringWidth + "px"
+            });
+        })
+    }
+    /*开始设置动画*/
+</script>
+<script>
+
+        var navString = new Array();
+        navString = ["navString0", "navString1", "navString2", "navString3", "navString4"];
+    
+        /*navString-line显示及特效*/
+        console.log("ccc");
+    
+        var navStringWidth = new Array();
+        $.each(navString, function (i, val) { //两个参数，第一个参数表示遍历的数组的下标，第二个参数表示下标对应的值
+            console.log(i + '```````' + val);
+            navStringWidth[i] = document.getElementById(navString[i]).offsetWidth;
+            document.getElementById("navString-line" + i.toString()).style.marginLeft = (97 - navStringWidth[i] * 1 / 2) + "px";
+    
+            $("#" + navString[i]).mouseover(function () {
+                document.getElementById(navString[i]).style.color = "#5d8ccf";
+                $("#navString-line" + i.toString()).stop(true, false).animate({width: navStringWidth[i] + "px"});
+            });
+            $("#" + navString[i]).mouseleave(function () {
+                document.getElementById(navString[i]).style.color = "#000000";
+                $("#navString-line" + i.toString()).stop(true, false).animate({width: "0px"});
+                $("#" + navString[i]).stop(true, false);
+            });
+        });
+    
+    </script>
+    
+    <script>
+        $(function () {
+            $(document).tooltip();
+        });
+    
+        var title = new Array();
+        title = ["picto-ALP1-w", "picto-BTH-w", "picto-BOB-w", "picto-CCS-w", "picto-CUR-w",
+            "picto-FSK-w", "picto-FRS1-w", "picto-IHO-w", "picto-LUG-w", "picto-NCB-w", "picto-STK-w",
+            "picto-SKN-w", "picto-SJP-w", "picto-SBD1-w", "picto-SSK-w"]
+    
+        $.each(title, function (i, val) {
+            $("#" + val).mouseover(function () {
+                document.getElementById(val).setAttribute("fill", "#b45127");
+            });
+            $("#" + val).mouseleave(function () {
+                document.getElementById(val).setAttribute("fill", "#0090d4");
+            });
+        })
+    </script>
+</html>

@@ -1,0 +1,795 @@
+/* POCOG Specific*/
+#mainBodyContent .ScheduleCaption h1, #mainBodyContent .ScheduleCaption h2, #mainBodyContent .ScheduleCaption h3 {
+    margin: 0;
+}
+#mainBodyContent .ScheduleCaption h2, #mainBodyContent h2 {
+    font-size: 22px;
+}
+#mainContainer ul {
+    padding-left: 0px;
+}
+#mainContainer ul li {
+    list-style: none;
+}
+#mainBodyContent-left {
+    min-height: 956px;
+}
+.overflow-x-auto {
+    width: 100%;
+    overflow-x: auto;
+}
+.en #mainBodyContent-left {
+    min-height: 956px;
+}
+.fr #mainBodyContent-left {
+    min-height: 956px;
+}
+#b52b300a-4896-46bf-86ac-9d61593b0741 div {
+    display: block !important;
+}
+#result-tab-2 row .col-md-6 {
+    width: 100%;
+}
+/* END POCOG Specific*/
+.jThumbnailScroller .jTscrollerNextButton:hover, .jThumbnailScroller .jTscrollerPrevButton:hover {
+    background-color: #d0004e;
+    opacity: 1;
+}
+.MedalBoxSmall img {
+    /*height: auto;*/
+    height: 24px;
+}
+.entriesByEventElem {
+    margin: 10px 0;
+}
+#medal_standing th img {
+    width: 20px;
+}
+
+#entries-searcher .dropdown-menu {
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.pull-right {
+    padding-top: 8px;
+}
+.jThumbnailScroller {
+    margin-bottom: 20px;
+    height: 110px;
+}
+.UnitNavigatorContainer .UnitNavigatorDescription {
+    height:60px;
+    padding-top:12px;
+}
+.legend.panel {
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 100%;
+}
+.legend.panel dl:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+#topSport_EventName H1 {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+#topSport_Sport H2 {
+    margin: 6px;
+}
+#topSport_Logo {
+    float: left;
+    height: 40px;
+    width: 42px;
+}
+#topSport_Logo IMG {
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+}
+#topSport_Stats {
+    height: 40px;
+}
+#navTabsSecondMenu ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.nav-tabs + .tab-content {
+    margin-top: -11px;
+}
+.StatusBoxSchedule.StatusBox4, .StatusBoxMini.StatusBox4 {
+    background-color: #00a651;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 10px;
+}
+.flagStyle {
+    margin-right: 6px;
+    border: none;
+    vertical-align: top;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    width:24px;
+    height:auto;
+}
+.flagStyleBig {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+.CountriesListItem div {
+    margin-top: 6px;
+}
+.ResTableFull .playerTagStandar {
+    /*height: 25px;*/
+    /*padding-top:4px;*/
+}
+.RecordTeam {
+    height:auto;
+}
+.RecordTeam + .playerTagStandar {
+    margin-top: 10px;
+}
+.playerTagStandar + .playerTagStandar {
+    margin-top: 4px;
+}
+
+.col-sm-6 .ResTableFull .playerTagStandar {
+    height: auto;
+}
+.UnitNavigatorDescription .UnitNavigatorCompetitor .FlagContainer IMG {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    -moz-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.UnitNavigatorOuterContainer {
+    width: 160px;
+}
+.matchScore .playerTagStandar .playerTagCountryLink {
+    /*margin-top: -1px;
+    padding-top: 0;*/
+}
+.CountriesListItem:nth-child(9):after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.panel-default {
+    /*margin-top: 20px;*/
+}
+#IdReferee {
+    margin-top: 30px;
+}
+#CourseInfoTable {
+  //Set display: none if course information should be hidden
+  //display: none;
+}
+.sportMedalsParticipants {
+    margin: 60px 0 0 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
+}
+.sportMedalsParticipants:nth-of-type(3) {
+    margin: 20px 0 0 0;
+}
+.sportMedalsParticipants h2 {
+    display: inline;
+}
+.UnitNavigatorDescription, .UnitNavigatorLowerContainer {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+}
+.UnitNavigatorDescription .UnitNavigatorPhase {
+    height: auto;
+    /*width: 128px;
+    flex: 1;
+    margin-top:10px;*/
+}
+.UnitNavigatorDescription .UnitNavigatorCompetitor {
+    width: 128px;
+    /*flex: 1;*/
+    margin-top:6px;
+}
+.UnitNavigatorLowerContainer .UnitNavigatorDate {
+    margin-top:7px;
+}
+.UnitNavigatorLowerContainer .UnitNavigatorStatus {
+    width:100%;
+    margin-left:0;
+}
+.detail_table {
+    padding: 20px
+}
+.detail2_table .StyleLeft {
+    padding-left: 15px;
+}
+.UnitNavigatorCurrent .UnitNavigatorArrow {
+    background: none;
+}
+.nav-tabs .dropdown-menu {
+    margin: -2px 0 0 0;
+    padding: 0px;
+}
+.EventLinksList {
+    padding: 20px;
+    background: #fff;
+}
+.LinkEventBox {
+    margin: 0 0 6px 0;
+}
+.btn .caret {
+    margin-left: 6px;
+}
+.clickable-schedule-row-hover td {
+    background-color: #eee!important;
+}
+.CalendarTable .Res1 TD, .CalendarTable .Res2 TD, .CalendarTable .Res3 TD {
+    height: 40px;
+    border-bottom: 1px solid #eee;
+}
+.ZZSchedule.disciplinePicture img {
+    padding-right: 5px;
+}
+.CalendarTable .calendar-hover, .CalendarTable .calendar-hover td {
+    background-color: #f4f4f4;
+}
+.CalendarTable .ResHead:nth-of-type(1) TH {
+    border-bottom: 1px solid #eee;
+    /*background:#7fc7e9;*/
+}
+.CalendarTable .ResHead:nth-of-type(1) TH.calendar-hover {
+    /*background:#d4e8f2;*/
+}
+.ScheduleBigFont, .ScheduleSmallFont {
+    color: #666;
+}
+.ScheduleBigFont {
+    font-size: 130%;
+}
+#scheduleTabs {
+    margin-bottom: 20px;
+}
+#scheduleTabs .btn {
+    font-size: 90%;
+    border: 1px solid #ddd;
+    margin-right: 4px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 3px;
+    margin: 0 3px 3px 0;
+    width: 40px;
+    height: auto;
+    color: #333;
+    background: #fff;
+}
+.para #scheduleTabs .btn {
+    width: 60px !important;
+}
+#scheduleTabs .btn:hover {
+    border: 1px solid #9a9a9a;
+}
+#scheduleTabs .btn a {
+    color: #333;
+}
+#scheduleTabs .btn a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+#scheduleTabs .NoSel {
+    background: none;
+}
+
+#scheduleTabs .SelMed {
+    background: none;
+    color: #333;
+}
+#scheduleTabs #DateSelectAll {
+    padding-top: 3.5px;
+    height: 45px;
+	min-width: 40px;
+    width: auto !important;
+}
+#scheduleTabs .NoMedalTab {
+    background: #fafafa;
+    border: 1px solid #dfdfdf;
+}
+#scheduleTabs .MedalTab.SelTab, #scheduleTabs .NoMedalTab.SelTab {
+    background: #cce6ff;
+    border: 1px solid #cce6ff;
+    color: #333;
+}
+.ScheduleCaption {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding: 8px 0;
+}
+.ScheduleCaption a {
+    color: #000;
+    font-size: 20px;
+}
+.ScheduleCaption a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.ScheduleTable {
+    margin-bottom: 40px;
+}
+.ScheduleMyTime {
+    width: 75px;
+    text-align: center;
+    font-style: normal;
+    height: auto;
+}
+.ScheduleTime, .ScheduleTimeRunning {
+    width: 95px;
+    height: auto;
+}
+.ScheduleTable .Res1 TD, .ScheduleTable .Res2 TD, .ScheduleTable .Res3 TD {
+    vertical-align: middle;
+}
+.ScheduleTable .Res1 TD, .ScheduleTable .Res2 TD, .ScheduleTable .Res3 TD, .ScheduleTable .Res1 TH, .ScheduleTable .Res2 TH, .ScheduleTable .Res3 TH {
+    height: 40px;
+    padding: 6px 5px;
+}
+.ResHead TD, .ResHead TH {
+    background: #f9f9f9;
+    color: #777;
+    height: 40px;
+    border-bottom: 1px solid #bbb;
+}
+.ResHead TD A, .ResHead TH A, .ResHead TD A:active, .ResHead TH A:active, .ResHead TD A:hover, .ResHead TH A:hover, .ResHead TD A:hover:active,  .ResHead TH A:hover:active, .CalendarTable .ResHead TD A, .CalendarTable .ResHead TH A, .CalendarTable .ResHead TD A:active, .CalendarTable .ResHead TH A:active, .CalendarTable .ResHead TD A:hover, .CalendarTable .ResHead TH A:hover, .CalendarTable .ResHead TD A:hover:active, .CalendarTable .ResHead TH A:hover:active {
+    color: #333;
+}
+.Res1 TD, .Res1 TH, .Res2 TD, .Res2 TH {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+}
+.ResCaption {
+    height: 36px;
+}
+.ResTableFull {
+    margin-top: 30px;
+}
+.ResTableFull td {
+    padding: 5px;
+    /*padding-left: 15px;*/
+}
+.ResTableFull:nth-of-type(1) {
+    margin-top: 0px;
+}
+.ResTableFull .Res1 > td:nth-child(4) > div[style='width:100px; white-space:nowrap;'],
+.ResTableFull .Res2 > td:nth-child(4) > div[style='width:100px; white-space:nowrap;'] {
+    width:100% !important;
+}
+
+.ScheduleCollapseButtons a {
+    font-size: 14px;
+}
+.ScheduleCollapseButtons img {
+    padding-left: 6px
+}
+.sR, .ScheduleButton {
+    padding-right: 6px;
+}
+.ScheduleCaption img.sportImgSmall {
+    display: none;
+}
+.MedalBoxSmall {
+    width: 30px;
+    padding: 3px 0;
+}
+.container-fluid {
+    /*padding: 0px;*/
+    margin-top: 6px
+}
+.playerTagStandar .nameLine {
+    white-space: normal;
+}
+.UnitNavigatorLowerContainer .UnitNavigatorDate abbr, .ScheduleTime abbr {
+    padding-left: 3px;
+}
+
+/* 2018-01-25 추가 */
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color:transparent !important;
+}
+#secondMenu .TopMenuLinks.dropdown.open {
+    background-color:#f1f1f1;
+}
+
+#secondMenu .TopMenuLinks > a {
+    color:#777;
+    display: block;
+    padding-bottom: 3px;
+}
+#secondMenu .TopMenuLinks > a.current,
+#secondMenu .TopMenuLinks > a:focus,
+#secondMenu .TopMenuLinks > a:hover {
+    color:#0090d4;
+    text-decoration: none;
+    position: relative;
+}
+#secondMenu .TopMenuLinks > a.current:before,
+#secondMenu .TopMenuLinks > a:focus:before,
+#secondMenu .TopMenuLinks > a:hover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    width: 120%;
+    height: 2px;
+    background: #0090D5;
+    margin-left: -10%;
+}
+
+.CalendarTable .calendar-hover td.styleCenter:hover {
+    background-color: #e4e4e4;
+}
+#CourseInfoTable {
+    display:none;
+}
+.ResHead TD.ScheduleVenue, .ResHead TH.ScheduleVenue {
+    width:115px;
+}
+.spaceElements.col-xs-12 + .col-xs-12 {
+    margin-top:10px;
+}
+.spaceElements.col-xs-12 + .col-xs-12 strong {
+    line-height:1.4;
+}
+.ResCaption {
+    padding:8px;
+    height:auto;
+}
+.ScheduleEvent .playerTagStandar {
+    padding-top:4px;
+}
+.ScheduleEvent .playerTagStandar .playerTagCountryLink div:first-child {
+    margin-bottom:0px;
+}
+.ScheduleEvent .playerTagStandar .playerTagCountryLink,
+.ResTableFull .playerTagStandar .playerTagCountryLink {
+    min-width:68px;
+}
+.ScheduleEvent .playerTagStandar .nameLine,
+.ResTableFull .playerTagStandar .nameLine {
+    padding-left: 10px;
+    padding-top: 0;
+    vertical-align: middle;
+    display: inline-block !important;
+    /*width: calc(100% - 68px);*/
+    width: auto;
+}
+.ScheduleVenue {
+    width:200px;
+}
+#groupInfoEvent {
+    margin-top: 6px;
+    font-size: 16px;
+    padding-left: 12px;
+    position: relative;
+}
+#groupInfoEvent:before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 3px;
+    background: #666;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+}
+#groupInfoEvent .StatusBoxTitle {
+    display:inline-block;
+}
+.bg-info {
+    background-color: #f1f1f1;
+}
+.bg-info .pull-left {
+    padding-top:6px;
+}
+.bg-info .playerTagStandar {
+    padding:6px;
+}
+#secondMenu + #topSport {
+    margin-top: 12px;
+}
+.ResultContentContainer {
+    margin-top: 12px;
+}
+.h3, h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #555;
+}
+body {
+    font-family: Arial,"Helvetica Neue",Helvetica,nanum,sans-serif;
+}
+abbr[data-original-title], abbr[title] {
+    cursor: pointer;
+    border-bottom: none;
+    text-decoration: none;
+}
+.pdfSelectionBoxEvent {
+    margin-top: 5px !important;
+}
+.btn.dropdown-toggle {
+    line-height:27px;
+}
+.pdfFrame a, .pdfFrameFull a {
+    font-weight:500;
+}
+img[alt='html'] {
+    width:20px;
+    height:auto;
+}
+#buttonEntriesName {
+    width:222px;
+}
+input[name="PageDataNotAvailable"] + strong {
+    display:block;
+    padding:20px 10px;
+}
+
+/* Athlete Profile */
+.table-user-information .bioTitle {
+    font-weight:700;
+    color:#555;
+}
+.table-user-information .bioTitle + td > b {
+    display:block;
+    padding:5px 10px;
+    background:#f1f1f1;
+}
+.table-user-information .bioTitle + td > b + br {
+    display:none;
+}
+.table-user-information .bioTitle + td > table {
+    width:100%;
+    margin-top:6px;
+}
+.table-user-information .bioTitle + td > table thead {
+    border-bottom:1px solid #ccc;
+}
+.table-user-information .bioTitle + td > table th,
+.table-user-information .bioTitle + td > table td {
+    text-align:left;
+    padding:5px 0;
+}
+.table-user-information .bioTitle + td > table th:first-child,
+.table-user-information .bioTitle + td > table th:last-child {
+    width: 15%;
+}
+#GeneralScheduleTable .ResHead > th:first-child {
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+}
+#medal_standing > input[name='PageDataNotAvailable'] + strong {
+    display:block;
+    padding:15px;
+}
+.CountriesListItem[attrcountrycode='CHN'],
+.CountriesListItem[attrcountrycode='OAR'],
+.CountriesListItem[attrcountrycode='MKD'],
+.CountriesListItem[attrcountrycode='PRK'],
+.CountriesListItem[attrcountrycode='TLS'] {
+    font-size:70%;
+}
+.ko .CountriesListItem[attrcountrycode='CHN'],
+.ko .CountriesListItem[attrcountrycode='OAR'],
+.ko .CountriesListItem[attrcountrycode='MKD'],
+.ko .CountriesListItem[attrcountrycode='PRK'],
+.ko .CountriesListItem[attrcountrycode='TLS'] {
+    font-size:90%;
+}
+.fr .CountriesListItem[attrcountrycode='CHN'],
+.fr .CountriesListItem[attrcountrycode='OAR'],
+.fr .CountriesListItem[attrcountrycode='MKD'],
+.fr .CountriesListItem[attrcountrycode='TLS'] {
+    font-size:90%;
+}
+.fr .CountriesListItem {
+    height:85px;
+}
+.playerTagContainerPhoto > img {
+    max-height:52px;
+}
+.UnitNavigatorDate {
+    font-size:90%;
+}
+.slick-list {
+    margin-top:-115px;
+}
+.BOBMember {
+    width:240px;
+}
+/* 2018-02-16 bobsleigh */
+.bobsleigh .BOBMember {
+	width:50%;
+}
+.bracketContainer .bracketTable .ResHead th,
+.bracketContainer .bracketTable .ResHead td {
+    text-align: center;
+}
+/* 2018-02-17 icehockey */
+.ice-hockey .info-timeline-content:after {
+	left:-14px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .column-left, .column-right {
+        width: 100%;
+        float: none;
+    }
+    .ScheduleMyTime {
+        /*display: table-cell !important;*/
+    }
+    #topSport_Sport H2 {
+        font-size: 180%;
+    }
+    #topSport_EventName H1 {
+        font-size: 140%;
+    }
+    #mainBodyContent .ScheduleCaption h2, #mainBodyContent h2 {
+        font-size: 18px;
+    }
+    .h3, h3 {
+        font-size: 16px;
+    }
+    #topSport_Stats {
+        display: none;
+    }
+    .table-responsive {
+        border: none;
+    }
+    .detail_table {
+        padding: 0px;
+    }
+    #topSport_Logo + #topSport_Sport > h2 {
+        margin-top:12px;
+        margin-bottom:0px;
+    }
+    #groupInfoEvent {
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width: 991px) {
+	.row:before {
+		clear: both;
+	}
+}
+@media only screen and (max-width: 767px) {
+    .ScheduleTime {
+        /*display: none;*/
+        width:15%;
+    }
+    .CalendarTable {
+        margin-bottom: 20px;
+        min-width:700px;
+    }
+    .ZZSchedule.disciplinePicture + .ZZSchedule {
+        width:90px;
+    }
+    #entries-searcher .dropdown-menu {
+        left: 0px;
+    }
+    #mainBodyContent-left {
+		/* 2018-02-16 */
+        /* min-height: 650px; */
+		min-height: 220px;
+    }
+    #scheduleTabs #DateSelectAll {
+        padding: 6.5px 3px;
+		min-width: 40px;
+	    width: auto !important;
+    }
+    .ResTableFull .playerTagStandar {
+        height: auto;
+        min-height: 22px;
+        padding-top: 0;
+    }
+    .ScheduleEvent .playerTagStandar .nameLine {
+        display:none !important;
+    }
+    .ResTablefull .playerTagStandar .playerTagCountryLink + .nameLine > a > span {
+        display:none;
+    }
+    .ResTableFull .playerTagStandar .nameLine {
+        padding-left: 0;
+        padding-top: 2px;
+        width: auto;
+    }
+    .panel-body {
+        padding:10px 0px;
+    }
+    /* PDF SELECTION */
+    .pdfSelectionBox,
+    .pdfSelectionBox .btn.dropdown-toggle {
+        width:100%;
+    }
+    .pdfSelectionBoxEvent {
+        width:100%;
+        margin:0 !important;
+    }
+    .pdfSelectionBoxEvent .btn.dropdown-toggle {
+        width:100%;
+    }
+    .pdfFrameFull {
+        font-size:14px;
+        font-weight: 700;
+    }
+    .pdfFrame a, .pdfFrameFull a {
+        font-weight:500;
+        font-size:12px;
+        line-height:1.8;
+    }
+    img[alt='html'] {
+        width:10px;
+        height:auto;
+    }
+    img[alt='pdf'] {
+        width:15px;
+        height:auto;
+    }
+    #groupInfoEvent {
+        font-size: 12px;
+    }
+	#mainContainer.contents {
+		padding-left:0;
+	    padding-right:0;
+	}
+	.playerTagSmallBox .FlagBox {
+		float:none;
+	}
+	.playerTagSmallBox .nameLine {
+	    width:100%;
+	}
+	.section-inner {
+		 padding:15px 5px;
+	}
+
+    /* Athlete Profile */
+    .table-user-information,
+    .table-user-information > tbody,
+    .table-user-information > tbody > tr,
+    .table-user-information > tbody > tr > td {
+        display:block;
+    }
+    .table-user-information .bioTitle {
+        background:#f1f1f1;
+    }
+    .table-user-information .bioTitle + td > b {
+        display:block;
+        padding:3px;
+        background:#f9f9f9;
+    }
+
+    .BOBMember {
+        width:160px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+	.GeneralScheduleContainer .pull-left img {
+		width:25px;
+	}
+}

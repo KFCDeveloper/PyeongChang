@@ -1,0 +1,164 @@
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.picto-wrap li {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bgcolor {
+    background-color: #F1F1F1;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    outline: none;
+    font-family: "微软雅黑", arial;
+}
+
+.wrap-box {
+    width: 1100px;
+    min-width: 1100px;
+    margin: 6% auto;
+}
+
+h1 {
+    line-height: 2;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+table.data-table {
+    width: 100%;
+}
+
+table.data-table tr:odd {
+    background: #dcebff;
+}
+
+table.data-table td {
+    line-height: 24px;
+    padding: 3px;
+    vertical-align: top;
+}
+
+table.data-table th {
+    height: 50px;
+    line-height: 50px;
+    padding: 3px;
+    font-size: 20px;
+    text-align: left;
+}
+
+table.data-table .colspan-a {
+    width: 35%;
+}
+
+table.data-table .colspan-b {
+    width: 25%;
+}
+
+table.data-table .colspan-c {
+    width: 40%;
+}
+
+table.data-table td pre {
+    display: block;
+    padding: 5px;
+    border: 1px solid #00caff;
+    background: #f8fcff;
+    text-align: left;
+}
+
+.testBtn-a {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(65, 133, 244);
+    cursor: pointer;
+}
+
+.testBtn-a.on {
+    background: #c9c9c9;
+    color: #666;
+    cursor: default;
+}
+
+.data-show-box {
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.date-font {
+    font-family:微软雅黑, arial;
+    font-size: 14px;
+    font-weight:700;
+    color:#777;
+}
+
+.date-tiem-span,
+.date-s-span {
+    display: inline-block;
+    font-size: 24px;
+    width: 46.8px;
+    height: 39px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.date-tiem-span {
+    background: #333;
+}
+
+.date-s-span {
+    background: #f00;
+}
+
+.date-select-a {
+    margin-right: 5px;
+}
+
+.timer-header{
+    font-size:19.2px;
+    font-weight:700;
+    color:#333;
+    font-weight:700;
+    padding-bottom: 15px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.menu-wrap ul {
+    padding: 0px;
+    margin: 0px;
+}
+.picto-wrap ul{
+    padding: 0px;
+    margin: 0px;
+}
+.picto-wrap li {
+    padding: 0px;
+    margin: 0px;
+}
+.utils {
+    height: 50px;
+    width: 1058px;
+    background: -webkit-linear-gradient(left, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0)); /* 标准的语法 */
+}

@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* font-face */
+@font-face {
+    font-family: "nanum";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://vol.pyeongchang2018.com/font/NanumGothic-Regular.eot");
+    src: url("https://vol.pyeongchang2018.com/font/NanumGothic-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "nanum";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://vol.pyeongchang2018.com/font/NanumGothic-Bold.eot");
+    src: url("https://vol.pyeongchang2018.com/font/NanumGothic-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "pychang";
+    font-style: normal;
+  	font-weight: 300;
+	src: url("https://vol.pyeongchang2018.com/font/PyeongChangL.eot");
+    src: url("https://vol.pyeongchang2018.com/font/PyeongChangL.woff") format("woff");
+}
+
+@font-face {
+    font-family: "pychang";
+    font-style: normal;
+  	font-weight: 500;
+	src: url("https://vol.pyeongchang2018.com/font/PyeongChangR.eot");
+    src: url("https://vol.pyeongchang2018.com/font/PyeongChangR.woff") format("woff");
+}
+
+@font-face {
+    font-family: "pychang";
+   	font-style: normal;
+  	font-weight: 700;
+	src: url("https://vol.pyeongchang2018.com/font/PyeongChangB.eot");
+    src: url("https://vol.pyeongchang2018.com/font/PyeongChangB.woff") format("woff");
+}
+
+@font-face {
+    font-family: "OmegaR";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../font/OMEGA-CT-Regular.eot");
+    src: url("../font/OMEGA-CT-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "OmegaB";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/OMEGA-CT-Regular.eot");
+    src: url("../font/OMEGA-CT-Regular.woff") format("woff");
+}
+
+/* reset */
+html {margin:0; padding:0; -webkit-text-size-adjust:none;}
+body {margin:0; padding:0; font-weight:300; font-size:14px; line-height:1.2; color:#555; -webkit-text-size-adjust:none;word-break:keep-all;word-wrap:break-word;}
+
+/* SKIP NAV */
+#skipNav{z-index:100000; overflow:hidden; position:fixed; top:0; left:0; width:100%; font-family:'pychang','nanum','dotum','AppleGothic'; }
+#skipNav a{display:block; width:100%; height:0; line-height:0;}
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {position:static; left:0; padding:9px 0; height:16px; width:100%; background:#f2f2f2; font-size:12px; font-weight:500; color:#000; line-height:16px; text-align:center}
+
+/* another Atos || header , column-right , sponsor-list , footer , float-bottom , floatHeader */
+.header div, .header dl, .header dt, .header dd, .header ul, .header ol, .header li, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .header form, .header fieldset, .header legend, .header input, .header textarea, .header radio, .header select, .header p, .header button, .column-right div, .column-right dl, .column-right dt, .column-right dd, .column-right ul, .column-right ol, .column-right li, .column-right h1, .column-right h2, .column-right h3, .column-right h4, .column-right h5, .column-right h6, .column-right form, .column-right fieldset, .column-right legend, .column-right input, .column-right textarea, .column-right radio, .column-right select, .column-right p, .column-right button, .sponsor-list div, .sponsor-list dl, .sponsor-list dt, .sponsor-list dd, .sponsor-list ul, .sponsor-list ol, .sponsor-list li, .sponsor-list h1, .sponsor-list h2, .sponsor-list h3, .sponsor-list h4, .sponsor-list h5, .sponsor-list h6, .sponsor-list form, .sponsor-list fieldset, .sponsor-list legend, .sponsor-list input, .sponsor-list textarea, .sponsor-list radio, .sponsor-list select, .sponsor-list p, .sponsor-list button, .footer div, .footer dl, .footer dt, .footer dd, .footer ul, .footer ol, .footer li, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer form, .footer fieldset, .footer legend, .footer input, .footer textarea, .footer radio, .footer select, .footer p, .footer button, .float-bottom div, .float-bottom dl, .float-bottom dt, .float-bottom dd, .float-bottom ul, .float-bottom ol, .float-bottom li, .float-bottom h1, .float-bottom h2, .float-bottom h3, .float-bottom h4, .float-bottom h5, .float-bottom h6, .float-bottom form, .float-bottom fieldset, .float-bottom legend, .float-bottom input, .float-bottom textarea, .float-bottom radio, .float-bottom select, .float-bottom p, .float-bottom button, .floatHeader div, .floatHeader dl, .floatHeader dt, .floatHeader dd, .floatHeader ul, .floatHeader ol, .floatHeader li, .floatHeader h1, .floatHeader h2, .floatHeader h3, .floatHeader h4, .floatHeader h5, .floatHeader h6, .floatHeader form, .floatHeader fieldset, .floatHeader legend, .floatHeader input, .floatHeader textarea, .floatHeader radio, .floatHeader select, .floatHeader p, .floatHeader button {margin:0; padding:0}
+.header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .column-right h1, .column-right h2, .column-right h3, .column-right h4, .column-right h5, .column-right h6, .sponsor-list h1, .sponsor-list h2, .sponsor-list h3, .sponsor-list h4, .sponsor-list h5, .sponsor-list h6, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .float-bottom h1, .float-bottom h2, .float-bottom h3, .float-bottom h4, .float-bottom h5, float-bottom h6, .floatHeader h1, .floatHeader h2, .floatHeader h3, .floatHeader h4, .floatHeader h5, .floatHeader h6 {font-weight:300; font-size:100%}
+.header ul, .header ol, .header li, .column-right ul, .column-right ol, .column-right li, .sponsor-list ul, .sponsor-list ol, .sponsor-list li, .footer ul, .footer ol, .footer li, .float-bottom ul, .float-bottom ol, .float-bottom li, .floatHeader ul, .floatHeader ol, .floatHeader li {list-style:none}
+.header fieldset, .header img, .column-right fieldset, .column-right img, .sponsor-list fieldset, .sponsor-list img, .footer fieldset, .footer img, .float-bottom fieldset, .float-bottom img, .floatHeader fieldset, .floatHeader img {border:0; vertical-align:middle}
+.header address, .header em, .column-right address, .column-right em, .sponsor-list address, .sponsor-list em, .footer address, .footer em, .float-bottom address, .float-bottom em, .floatHeader address, .floatHeader em {font-style:normal}
+.header table, .column-right table, .sponsor-list table, .footer table, .float-bottom table, .floatHeader table {width:100%; border-collapse:collapse}
+.header button, .column-right button, .sponsor-list button, .footer button, .float-bottom button, .floatHeader button {display:inline-block;border:0; background:none; cursor:pointer; line-height:1.2;}
+.header button, .header button:before, .header button:after, .column-right button, .column-right button:before, .column-right button:after, .sponsor-list button, .sponsor-list button:before, .sponsor-list button:after, .footer button, .footer button:before, .footer button:after, .float-bottom button, .float-bottom button:before, .float-bottom button:after, .floatHeader button, .floatHeader button:before, .floatHeader button:after {-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+.header hr, .column-right hr, .sponsor-list hr, .footer hr, .float-bottom hr, .floatHeader hr {display:none}
+.header a, .column-right a, .sponsor-list a, .footer a, .float-bottom a, .floatHeader a {display:inline-block;color:#555; text-decoration:none}
+.header a:hover, .header a:focus, .column-right a:hover, .column-right a:focus, .sponsor-list a:hover, .sponsor-list a:focus, .footer a:hover, .footer a:focus, .float-bottom a:hover, .float-bottom a:focus, .floatHeader a:hover, .floatHeader a:focus {color:#005daa}
+.header .para a:hover, .header .para a:focus, .column-right .para a:hover, .column-right .para a:focus, .sponsor-list .para a:hover, .sponsor-list .para a:focus, .footer .para a:hover, .footer .para a:focus, .float-bottom .para a:hover, .float-bottom .para a:focus, .floatHeader .para a:hover, .floatHeader .para a:focus{color: #c3390f;}
+.header a::-moz-focus-inner, .column-right a::-moz-focus-inner, .sponsor-list a::-moz-focus-inner, .footer a::-moz-focus-inner, .float-bottom a::-moz-focus-inner, .floatHeader a::-moz-focus-inner {border:0;padding:0;margin:0;}
+.header a, .header a:before, .header a:after, .column-right a, .column-right a:before, .column-right a:after, .sponsor-list a, .sponsor-list a:before, .sponsor-list a:after, .footer a, .footer a:before, .footer a:after, .float-bottom a, .float-bottom a:before, .float-bottom a:after, .floatHeader a, .floatHeader a:before, .floatHeader a:after {-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+.header caption, .header legend, .column-right caption, .column-right legend, .sponsor-list caption, .sponsor-list legend, .footer caption, .footer legend, .float-bottom caption, .float-bottom legend, .floatHeader caption, .floatHeader legend {overflow: hidden; clip: rect(0 0 0 0); margin: -1px; width: 1px; height: 1px;}
+.header input, .header textarea, .header select, .column-right input, .column-right textarea, .column-right select, .sponsor-list input, .sponsor-list textarea, .sponsor-list select, .footer input, .footer textarea, .footer select, .float-bottom input, .float-bottom textarea, .float-bottom select, .floatHeader input, .floatHeader textarea, .floatHeader select {vertical-align:middle; color:#7e7e7e;font-family: inherit;}
+.floatHeader input {font-size:100%}
+.header input, .column-right input, .sponsor-list input, .footer input, .float-bottom input {font-size:100%}
+.header button, .header label, .header input[type=image], .column-right button, .column-right label, .column-right input[type=image], .sponsor-list button, .sponsor-list label, .sponsor-list input[type=image], .footer button, .footer label, .footer input[type=image], .float-bottom button, .float-bottom label, .float-bottom input[type=image], .floatHeader button, .floatHeader label, .floatHeader input[type=image] {cursor:pointer; vertical-align:middle}
+.header input[type="text"], .header input[type="password"], .column-right input[type="text"], .column-right input[type="password"], .sponsor-list input[type="text"], .sponsor-list input[type="password"], .footer input[type="text"], .footer input[type="password"], .float-bottom input[type="text"], .float-bottom input[type="password"], .floatHeader input[type="text"], .floatHeader input[type="password"] {border:1px solid #bbb; padding:0 2px}
+.header select, .header textarea, .column-right select, .column-right textarea, .sponsor-list select, .sponsor-list textarea, .footer select, .footer textarea, .float-bottom select, .float-bottom textarea, .floatHeader select, .floatHeader textarea {border:1px solid #bbb}
+.header textarea, .column-right textarea, .sponsor-list textarea, .footer textarea, .float-bottom textarea, .floatHeader textarea {resize:none; overflow: auto;}
+.header select, .column-right select, .sponsor-list select, .footer select, .float-bottom select, .floatHeader select {height:22px; font-size:100%; box-sizing:border-box; border-radius: 0px;}
+.header strong, .header b, .column-right strong, .column-right b, .sponsor-list strong, .sponsor-list b, .footer strong, .footer b, .float-bottom strong, .float-bottom b, .floatHeader strong, .floatHeader b{font-weight:500}
+.header th, .column-right th, .sponsor-list th, .footer th, .float-bottom th, .floatHeader th {font-weight:300;}
+.header img, .column-right img, .sponsor-list img, .footer img, .float-bottom img, .floatHeader img {max-width:100%}
+.header article, .header aside, .header canvas, .header details, .header figcaption, .header figure, .header footer, .header header, .header hgroup, .header menu, .header nav, .header section, .header summary, .column-right article, .column-right aside, .column-right canvas, .column-right details, .column-right figcaption, .column-right figure, .column-right footer, .column-right header, .column-right hgroup, .column-right menu, .column-right nav, .column-right section, .column-right summary, .sponsor-list article, .sponsor-list aside, .sponsor-list canvas, .sponsor-list details, .sponsor-list figcaption, .sponsor-list figure, .sponsor-list footer, .sponsor-list header, .sponsor-list hgroup, .sponsor-list menu, .sponsor-list nav, .sponsor-list section, .sponsor-list summary, .footer article, .footer aside, .footer canvas, .footer details, .footer figcaption, .footer figure, .footer footer, .footer header, .footer hgroup, .footer menu, .footer nav, .footer section, .footer summary, .float-bottom article, .float-bottom aside, .float-bottom canvas, .float-bottom details, .float-bottom figcaption, .float-bottom figure, .float-bottom footer, .float-bottom header, .float-bottom hgroup, .float-bottom menu, .float-bottom nav, .float-bottom section, .float-bottom summary, .floatHeader article, .floatHeader aside, .floatHeader canvas, .floatHeader details, .floatHeader figcaption, .floatHeader figure, .floatHeader footer, .floatHeader header, .floatHeader hgroup, .floatHeader menu, .floatHeader nav, .floatHeader section, .floatHeader summary {display:block}
+.header input[type="text"], .header input[type="password"], .column-right input[type="text"], .column-right input[type="password"], .sponsor-list input[type="text"], .sponsor-list input[type="password"], .footer input[type="text"], .footer input[type="password"], .float-bottom input[type="text"], .float-bottom input[type="password"], .floatHeader input[type="text"], .floatHeader input[type="password"] {border-radius:0}
+.header iframe, .column-right iframe, .sponsor-list iframe, .footer iframe, .float-bottom iframe, .floatHeader iframe {border:none;}
+.header table, .column-right table, .sponsor-list table, .footer table, .float-bottom table, .floatHeader table {width:100%; border-spacing:0}
+.header table th, .column-right table th, .sponsor-list table th, .footer table th, .float-bottom table th, .floatHeader table th {letter-spacing:-1px; border-collapse:collapse}
+.header table td, .column-right table td, .sponsor-list table td, .footer table td, .float-bottom table td, .floatHeader table td {border-collapse:collapse}
+
+/* locale code */
+.wrap.ko .header, .wrap.ko .column-right, .wrap.ko .sponsor-list, .wrap.ko .footer, .wrap.ko .float-bottom, .wrap.ko .floatHeader,
+.wrap.ko .header input, .wrap.ko .header button, .wrap.ko .column-right input, .wrap.ko .column-right button, .wrap.ko .sponsor-list input,.wrap.ko .sponsor-list button, .wrap.ko .footer input, .wrap.ko .footer button, .wrap.ko .float-bottom input, .wrap.ko .float-bottom button, .wrap.ko .floatHeader input, .wrap.ko .floatHeader button { font-family:'pychang','nanum','dotum','AppleGothic'; }
+.wrap.en .header, .wrap.en .column-right, .wrap.en .sponsor-list, .wrap.en .footer, .wrap.en .float-bottom, .wrap.en .floatHeader,
+.wrap.en .header input, .wrap.en .header button, .wrap.en .column-right input, .wrap.en .column-right button, .wrap.en .sponsor-list input, .wrap.en .sponsor-list button, .wrap.en .footer input, .wrap.en .footer button, .wrap.en .float-bottom input, .wrap.en .float-bottom button, .wrap.en .floatHeader input, .wrap.en .floatHeader button { font-family:'Arial', 'dotum', 'AppleGothic'; }
+.wrap.fr .header, .wrap.fr .column-right, .wrap.fr .sponsor-list, .wrap.fr .footer, .wrap.fr .float-bottom, .wrap.fr .floatHeader,
+.wrap.fr .header input, .wrap.fr .header button, .wrap.fr .column-right input, .wrap.fr .column-right button, .wrap.fr .sponsor-list input, .wrap.fr .sponsor-list button, .wrap.fr .footer input, .wrap.fr .footer button, .wrap.fr .float-bottom input, .wrap.fr .float-bottom button, .wrap.fr .floatHeader input, .wrap.fr .floatHeader button { font-family:'Arial', 'dotum', 'AppleGothic'; }
+.wrap.cn .header, .wrap.cn .column-right, .wrap.cn .sponsor-list, .wrap.cn .footer, .wrap.cn .float-bottom, .wrap.cn .floatHeader,
+.wrap.cn .header input, .wrap.cn .header button, .wrap.cn .column-right input, .wrap.cn .column-right button, .wrap.cn .sponsor-list input, .wrap.cn .sponsor-list button, .wrap.cn .footer input, .wrap.cn .footer button, .wrap.cn .float-bottom input, .wrap.cn .float-bottom button, .wrap.cn .floatHeader input, .wrap.cn .floatHeader button { font-family:'Arial', 'SimHei','sans-serif', sans-serif; word-break: break-all;}
+.wrap.jp .header, .wrap.jp .column-right, .wrap.jp .sponsor-list, .wrap.jp .footer, .wrap.jp .float-bottom, .wrap.jp .floatHeader,
+.wrap.jp .header input, .wrap.jp .header button, .wrap.jp .column-right input, .wrap.jp .column-right button, .wrap.jp .sponsor-list input, .wrap.jp .sponsor-list button, .wrap.jp .footer input, .wrap.jp .footer button, .wrap.jp .float-bottom input, .wrap.jp .float-bottom button, .wrap.jp .floatHeader input, .wrap.jp .floatHeader button { font-family:'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','Osaka', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', 'dotum', 'sans-serif', sans-serif; word-break: break-all;}
+
+/* MAIN | ATOS */
+#mainContainer #mainBodyContent-right {padding:0;}
+#mainContainer #poweredBy {padding:15px 10px; text-align:center; background:#fff;}
+
+#mainContainer .atos-omega {margin:20px auto; text-align:center;}
+#mainContainer .atos-omega img {max-width:100%;}
+
+@media only screen and (min-width: 768px) and (max-width: 1024.9999999999px){
+	#mainContainer #mainBodyContent-right {margin:0 -0.8%;}
+	#mainContainer #mainBodyContent-right:after {content:""; display:block; clear:both;}
+	#mainContainer #mainBodyContent-right > div {float:left; width:48.4%; margin:20px 0.8% 0 0.8%; clear:none; text-align:center;}
+	#mainContainer #mainBodyContent-right > div > div {margin:0 auto;}
+	#mainContainer #mainBodyContent-right > div:nth-child(8) {clear:both;}
+	/*#mainContainer #mainBodyContent-right > div#poweredBy ~ div:nth-child(2n+1) {clear:inherit;}
+	#mainContainer #mainBodyContent-right > div#poweredBy ~ div:nth-child(2n) {clear:both;}*/
+	#mainContainer #mainBodyContent-right #poweredBy {float:none; width:98.4%; clear:both; padding:15px 10px;}
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 767.9999999999px){
+	/* MAIN | ATOS */
+	#mainContainer #poweredBy {margin-bottom:0;}
+}
+

@@ -1,0 +1,31 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-wrap-1 ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.picto-wrap-1 ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.picto-wrap-1 li {
+    padding: 0px;
+    margin: 0px;
+}
+
+.utils-1 {
+    height: 50px;
+    width: 1058px;
+    background: -webkit-linear-gradient(left, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(0, 85, 148, 1), rgba(0, 85, 148, 0));
+}
